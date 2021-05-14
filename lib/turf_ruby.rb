@@ -3,6 +3,7 @@
 require "turf"
 require "turf/along"
 require "turf/bearing"
+require "turf/circle"
 require "turf/destination"
 require "turf/helper"
 require "turf/measurement"
