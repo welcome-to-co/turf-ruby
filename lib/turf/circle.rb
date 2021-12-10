@@ -2,7 +2,7 @@
 
 module Turf
 
-  def self.circle(origin, radius, **options)
+  def self.circle(origin, radius, options = {})
     steps       = options[:steps] || 64
     properties  = options[:properties] ? options[:properties] : ((!origin.kind_of?(Array) && origin[:type] == "Feature" && origin[:properties]) ? origin[:properties] : {})
     units       = options[:units] || 'kilometers'

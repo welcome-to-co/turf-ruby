@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Turf
-  def self.destination(origin, distance, bearing, **options)
+  def self.destination(origin, distance, bearing, options = {})
     coordinates1 = get_coord origin
     longitude1 = degrees_to_radians coordinates1[0]
     latitude1 = degrees_to_radians coordinates1[1]

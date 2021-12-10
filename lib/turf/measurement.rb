@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Turf
-  def self.distance(from, to, **options)
+  def self.distance(from, to, options = {})
     coordinates1 = get_coord from
     coordinates2 = get_coord to
 

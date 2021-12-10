@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Turf
-  def self.bearing(from, to, **options)
+  def self.bearing(from, to, options = {})
     return calculate_final_bearing(from, to) if options[:final] == true
 
     coordinates1 = get_coord from
