@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Turf
-  def self.along(line, distance, options = {}})
+  def self.along(line, distance, options = {})
     travelled = 0
 
     geom = get_geom line
